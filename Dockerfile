@@ -3,9 +3,8 @@ FROM openjdk:8
 
 # For Java 11, try this
 #FROM adoptopenjdk/openjdk11:alpine-jre
-MAINTAINER khanhitvn.online
+EXPOSE 8087
 # Refer to Maven build -> finalName
-ARG JAR_FILE=target/spring-boot-web.jar
 
 ADD target/spring-boot-web.jar app-server.jar
 
