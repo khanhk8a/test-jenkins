@@ -1,5 +1,4 @@
 FROM openjdk:8
-VOLUME /tmp
 EXPOSE 8087
 ###
 
