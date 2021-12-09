@@ -2,6 +2,6 @@ FROM openjdk:8
 EXPOSE 8087
 ###
 
-ADD target/jenkins-0.0.1-SNAPSHOT.jar app.jar jenkins-0.0.1-SNAPSHOT.jar app.jar
+ADD target/test-docker-image-linux-k.jar test-docker-image-linux-k.jar
 
-ENTRYPOINT exec java -jar jenkins-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java" ,"-jar", "/test-docker-image-linux-k.jar"]
