@@ -6,10 +6,10 @@ FROM openjdk:8
 EXPOSE 8087
 # Refer to Maven build -> finalName
 
-ADD target/spring-boot-web.jar app-server.jar
+ADD target/spring-boot-web.jar spring-boot-web.jar
 
 # java -jar /opt/app/app.jar
-ENTRYPOINT ["java","-jar","/app-server.jar"]
+ENTRYPOINT ["java","-jar","/spring-boot-web.jar"]
 
 ## sudo docker run -p 8080:8080 -t docker-spring-boot:1.0
 ## sudo docker run -p 80:8080 -t docker-spring-boot:1.0
